@@ -1,0 +1,27 @@
+<h1 id="title"> Question Time </h1>
+<div id="form-outer">
+  <p id="description"?>
+     Time to find out about your food habits!
+     </p>
+  
+  <form id="survey-form">
+    <div class="Firsttab"
+    <label id="name-label" for="name">* Name: </label>
+    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+</div>
+
+<div class="Secondtab"
+     <label id="email-label" for="email">* Email: </label>
+</div>
+<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+</div>
+
+<div class="Thirdtab"
+     <label id="age-label" for="age"> Age: </label>
+<input type="number" name="age" id="number" minx="1" max="125"" class="input-field" placeholder="Enter your age" >
+</div>
+    
+
+    
+    
+   
