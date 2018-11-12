@@ -1,26 +1,116 @@
-<h1 id="title"> Question Time </h1>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Food Survey</h1>
 <div id="form-outer">
-  <p id="description"?>
-     Time to find out about your food habits!
-     </p>
-  
+  <p id="description">
+    Let us know a few details about you
+  </p>
   <form id="survey-form">
-    <div class="Firsttab"
-    <label id="name-label" for="name">* Name: </label>
-    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+      </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">Which option best describes your interest in food?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option value="massive">Massive foodie</option>
+      <option value="foodie">Foodie</option>
+      <option value="hate">Hate food</option>
+          </select>
+      </div>
+    </div>
+        <div class="rowTab">
+      <div class="labels">
+        <label for="userRating">* How likely is that you would skip a meal?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Definitely<input name="radio-buttons" value="1"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Maybe<input name="radio-buttons" value="2"  type="radio" class="userRatings" ></label></li>
+          <li class="radio"><label>Never<input name="radio-buttons" value="3"  type="radio" class="userRatings" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">What meal do you like most? </label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="challenges">Breakfast</option>
+      <option value="projects">Lunch</option>
+      <option value="community">Dinner</option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Favourite food </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Roast beef</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Ice Cream</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Cream Soda</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Chocolate</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Cake</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Coco Pops</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Crisps</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">Fruit Pastilles</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Smarties</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Mars Bar</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Yorkshire Puddings</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments">Any food you would like added to this list?</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
 </div>
 
-<div class="Secondtab"
-     <label id="email-label" for="email">* Email: </label>
-</div>
-<input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
-</div>
-
-<div class="Thirdtab"
-     <label id="age-label" for="age"> Age: </label>
-<input type="number" name="age" id="number" minx="1" max="125"" class="input-field" placeholder="Enter your age" >
-</div>
     
+    
+   
+    
+   
+    
+    
+   
+    
+    
+   
 
     
     
